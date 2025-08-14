@@ -1,2 +1,0 @@
-# Lector
-Lector Afip
