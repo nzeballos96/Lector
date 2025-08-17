@@ -164,8 +164,8 @@
 
                     const ptoVenta = String(getCellValue("PTO_VENTA")).padStart(5, '0');
                     const nro = String(getCellValue("NRO")).padStart(20, '0');
-                    
-                    const espacios = ' '.repeat(20);
+                    const espacios = String(getCellValue("NRO")).padStart(20, '0');
+                    //const espacios = ' '.repeat(20);
                     const cuitClienteCell = getCellValue("NRO_DOC");
                     const tipoDocCliente = (cuitClienteCell === '11111111' ? '99' : '96');
                     const cuitCliente = String(cuitClienteCell).replace(/-/g, '').padStart(20, '0');
@@ -212,3 +212,4 @@
 </body>
 
 </html>
+
